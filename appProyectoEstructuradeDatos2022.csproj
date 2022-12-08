@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41BD4C39-5A90-4A62-9ADF-2C6933A31C4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>appProyectoEstructuradeDatos2022</RootNamespace>
+    <AssemblyName>appProyectoEstructuradeDatos2022</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABB.cs" />
+    <Compile Include="ABBOrdenamiento.cs" />
+    <Compile Include="Bicola.cs" />
+    <Compile Include="CGrafo.cs" />
+    <Compile Include="Cola.cs" />
+    <Compile Include="Colalista.cs" />
+    <Compile Include="Colalistaenlazada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Colalistaenlazada.Designer.cs">
+      <DependentUpon>Colalistaenlazada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Colaprioridad.cs" />
+    <Compile Include="FrmArbolcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArbolcs.Designer.cs">
+      <DependentUpon>FrmArbolcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBurbuja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBurbuja.Designer.cs">
+      <DependentUpon>FrmBurbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBicola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBicola.Designer.cs">
+      <DependentUpon>FrmBicola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColaCircularDinamica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColaCircularDinamica.Designer.cs">
+      <DependentUpon>FrmColaCircularDinamica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmColaPrioridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmColaPrioridad.Designer.cs">
+      <DependentUpon>FrmColaPrioridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCuentas.Designer.cs">
+      <DependentUpon>FrmCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstructuras.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstructuras.Designer.cs">
+      <DependentUpon>FrmEstructuras.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGrafos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGrafos.Designer.cs">
+      <DependentUpon>FrmGrafos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInsercion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInsercion.Designer.cs">
+      <DependentUpon>FrmInsercion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListaCircular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListaCircular.Designer.cs">
+      <DependentUpon>FrmListaCircular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListadoblecircular.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListadoblecircular.Designer.cs">
+      <DependentUpon>FrmListadoblecircular.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListasdoblesenlazadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListasdoblesenlazadas.Designer.cs">
+      <DependentUpon>FrmListasdoblesenlazadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListasSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListasSimples.Designer.cs">
+      <DependentUpon>FrmListasSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuColas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuColas.Designer.cs">
+      <DependentUpon>FrmMenuColas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMezclas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMezclas.Designer.cs">
+      <DependentUpon>FrmMezclas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenamientoABB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenamientoABB.Designer.cs">
+      <DependentUpon>FrmOrdenamientoABB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOrdenamientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOrdenamientos.Designer.cs">
+      <DependentUpon>FrmOrdenamientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRadix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRadix.Designer.cs">
+      <DependentUpon>FrmRadix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRapido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRapido.Designer.cs">
+      <DependentUpon>FrmRapido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeleccion.Designer.cs">
+      <DependentUpon>FrmSeleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmShell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmShell.Designer.cs">
+      <DependentUpon>FrmShell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafo.cs" />
+    <Compile Include="ListaCircular.cs" />
+    <Compile Include="Listadoblecircular.cs" />
+    <Compile Include="MiListaDobleE.cs" />
+    <Compile Include="Nodo.cs" />
+    <Compile Include="NodoABB.cs" />
+    <Compile Include="NodoBicola.cs" />
+    <Compile Include="Nodocola.cs" />
+    <Compile Include="Nododoblecircular.cs" />
+    <Compile Include="NododobleE.cs" />
+    <Compile Include="Nodolista.cs" />
+    <Compile Include="NodoListaCirular.cs" />
+    <Compile Include="NodoListaSimple.cs" />
+    <Compile Include="Nodoprioridad.cs" />
+    <Compile Include="OperacionesListaSimple.cs" />
+    <Compile Include="OperacionMezcla.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Colalistaenlazada.resx">
+      <DependentUpon>Colalistaenlazada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmArbolcs.resx">
+      <DependentUpon>FrmArbolcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBicola.resx">
+      <DependentUpon>FrmBicola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBurbuja.resx">
+      <DependentUpon>FrmBurbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColaCircularDinamica.resx">
+      <DependentUpon>FrmColaCircularDinamica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmColaPrioridad.resx">
+      <DependentUpon>FrmColaPrioridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCuentas.resx">
+      <DependentUpon>FrmCuentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstructuras.resx">
+      <DependentUpon>FrmEstructuras.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGrafos.resx">
+      <DependentUpon>FrmGrafos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInsercion.resx">
+      <DependentUpon>FrmInsercion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListaCircular.resx">
+      <DependentUpon>FrmListaCircular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListadoblecircular.resx">
+      <DependentUpon>FrmListadoblecircular.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListasdoblesenlazadas.resx">
+      <DependentUpon>FrmListasdoblesenlazadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListasSimples.resx">
+      <DependentUpon>FrmListasSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuColas.resx">
+      <DependentUpon>FrmMenuColas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMezclas.resx">
+      <DependentUpon>FrmMezclas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenamientoABB.resx">
+      <DependentUpon>FrmOrdenamientoABB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOrdenamientos.resx">
+      <DependentUpon>FrmOrdenamientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRadix.resx">
+      <DependentUpon>FrmRadix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRapido.resx">
+      <DependentUpon>FrmRapido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeleccion.resx">
+      <DependentUpon>FrmSeleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmShell.resx">
+      <DependentUpon>FrmShell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
